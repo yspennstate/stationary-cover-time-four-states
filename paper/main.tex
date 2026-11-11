@@ -43,8 +43,11 @@ visited at time $0$. Open Problem~6.30 in Aldous and Fill~\cite{AF} asks whether
 \end{equation}
 for every reversible chain on $n$ states. The right side is the stationary cover time of the simple random walk on
 $K_n$: from a uniform start, the walk waits a geometric number of steps with mean $(n-1)/(n-k)$ for the $k$-th new
-state, $k=1,\dots,n-1$. For unweighted graphs and the worst starting state, the asymptotic lower bound of order
-$n\log n$ is due to Feige~\cite{Feige}; see also~\cite[Chapter~6]{AF}. The exact inequality~\eqref{eq:conj} asks for
+state, $k=1,\dots,n-1$. The harmonic number enters through Matthews' method~\cite{Mat}, which bounds the cover time from
+any start above and below by $H_{n-1}$ times the largest and smallest expected hitting times between states. For
+unweighted graphs the asymptotic lower bound of order $n\log n$, from every starting vertex, is due to
+Feige~\cite{Feige}, and Aldous~\cite{Al89} gave lower bounds of the same order for reversible chains started from
+stationarity; see also~\cite[Chapter~6]{AF}. The exact inequality~\eqref{eq:conj} asks for
 more, since it compares every weighted chain, with holding allowed, with one explicit extremal chain. For $n=2$ it is
 the statement $\E_\pi C\ge 1$, which is clear.
 
@@ -259,8 +262,11 @@ The paper is part of the Math Brain project, whose public repository is
 \begin{thebibliography}{99}
 \bibitem{AF} D.~Aldous, J.~A.~Fill, \emph{Reversible Markov Chains and Random Walks on Graphs}, unfinished monograph,
 recompiled 2014, \url{https://www.stat.berkeley.edu/~aldous/RWG/book.html}.
+\bibitem{Al89} D.~J.~Aldous, Lower bounds for covering times for reversible Markov chains and random walks on graphs,
+J. Theoret. Probab. 2 (1989), 91--100.
 \bibitem{Feige} U.~Feige, A tight lower bound on the cover time for random walks on graphs, Random Structures
 Algorithms 6 (1995), 433--438.
+\bibitem{Mat} P.~Matthews, Covering problems for Markov chains, Ann. Probab. 16 (1988), 1215--1228.
 \bibitem{MathBrainRepo} Y.~Shmalo, \emph{Math Brain: public snapshot, code and tests}, 2026,
 \url{https://github.com/yspennstate/math-brain-public}.
 \bibitem{MathBrainPaper} Y.~Shmalo, \emph{Math Brain: shared, auditable memory for multi-agent mathematical research},
