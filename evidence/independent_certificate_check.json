@@ -1,0 +1,402 @@
+{
+  "independent_reconstruction": "stdlib Leibniz determinants plus 16 spanning trees; no sympy",
+  "polynomial_terms": 13368,
+  "degree": 16,
+  "negative_original_terms": 2421,
+  "certificates": [
+    {
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "coefficients": 18516,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 2
+    },
+    {
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        4
+      ],
+      "coefficients": 18516,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 2
+    },
+    {
+      "order": [
+        0,
+        1,
+        2,
+        4,
+        3,
+        5
+      ],
+      "coefficients": 18516,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 2
+    },
+    {
+      "order": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        3
+      ],
+      "coefficients": 18516,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 2
+    },
+    {
+      "order": [
+        0,
+        1,
+        2,
+        5,
+        3,
+        4
+      ],
+      "coefficients": 18516,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 2
+    },
+    {
+      "order": [
+        0,
+        1,
+        2,
+        5,
+        4,
+        3
+      ],
+      "coefficients": 18516,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 2
+    },
+    {
+      "order": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        3,
+        4,
+        2,
+        5
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        2
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        3,
+        5,
+        2,
+        4
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        3,
+        5,
+        4,
+        2
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        4,
+        2,
+        3,
+        5
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        4,
+        2,
+        5,
+        3
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        4,
+        3,
+        2,
+        5
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        4,
+        3,
+        5,
+        2
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        4,
+        5,
+        2,
+        3
+      ],
+      "coefficients": 19506,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        4,
+        5,
+        3,
+        2
+      ],
+      "coefficients": 19506,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        5,
+        2,
+        3,
+        4
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        5,
+        2,
+        4,
+        3
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        5,
+        3,
+        2,
+        4
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        5,
+        3,
+        4,
+        2
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        5,
+        4,
+        2,
+        3
+      ],
+      "coefficients": 19506,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        1,
+        5,
+        4,
+        3,
+        2
+      ],
+      "coefficients": 19506,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        5,
+        1,
+        2,
+        4,
+        3
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        5,
+        1,
+        3,
+        2,
+        4
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        5,
+        1,
+        3,
+        4,
+        2
+      ],
+      "coefficients": 19416,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        5,
+        1,
+        4,
+        2,
+        3
+      ],
+      "coefficients": 19506,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    },
+    {
+      "order": [
+        0,
+        5,
+        1,
+        4,
+        3,
+        2
+      ],
+      "coefficients": 19506,
+      "inverse_identity": true,
+      "connected_boundary_suffixes": 3
+    }
+  ],
+  "positive_coefficients_checked": 577620,
+  "edge_orders_covered": 720,
+  "seconds": 109.58531180000136,
+  "passed": true
+}

@@ -1,0 +1,1066 @@
+{
+  "exact_integer_arithmetic": true,
+  "variables": "edge order a=01,b=02,c=03,d=12,e=13,f=23",
+  "polynomial_sha256": "519e39493bfc7723b962618f5e93975475eaa658766b4a646b38c641b8d41649",
+  "vertex_actions_checked": 24,
+  "edge_orders_covered": 720,
+  "cones": [
+    {
+      "file": "cone_00.json.gz",
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "terms": 18516,
+      "min_coefficient": 8,
+      "max_coefficient": 86396714058644,
+      "sha256_uncompressed": "1eb99798be1dacf6819bcdd88fc07ad34dfc49704dc64582b303922fc4d9553c",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        122683392,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        }
+      ]
+    },
+    {
+      "file": "cone_01.json.gz",
+      "order": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        4
+      ],
+      "terms": 18516,
+      "min_coefficient": 8,
+      "max_coefficient": 85150133199728,
+      "sha256_uncompressed": "ac2145bd69c0f0b42823c849d982244b5a521197dca3f9c879c12a61cb2dac65",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        122683392,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        }
+      ]
+    },
+    {
+      "file": "cone_02.json.gz",
+      "order": [
+        0,
+        1,
+        2,
+        4,
+        3,
+        5
+      ],
+      "terms": 18516,
+      "min_coefficient": 8,
+      "max_coefficient": 86531824894966,
+      "sha256_uncompressed": "f789a5a83b7f38ec8b3688420214e4584bdade256799db4bd3ea7a221a4f92dc",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        122683392,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        }
+      ]
+    },
+    {
+      "file": "cone_03.json.gz",
+      "order": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        3
+      ],
+      "terms": 18516,
+      "min_coefficient": 8,
+      "max_coefficient": 85030824740490,
+      "sha256_uncompressed": "69d55a35fe2387cc1ea18210b0f42a559df35ea61b58577983853a8969427979",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        122683392,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        }
+      ]
+    },
+    {
+      "file": "cone_04.json.gz",
+      "order": [
+        0,
+        1,
+        2,
+        5,
+        3,
+        4
+      ],
+      "terms": 18516,
+      "min_coefficient": 8,
+      "max_coefficient": 83219113535274,
+      "sha256_uncompressed": "850f6aed736920dcada974214b6487d9cb3ff01022290f1818a1875d2d51598e",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        122683392,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        }
+      ]
+    },
+    {
+      "file": "cone_05.json.gz",
+      "order": [
+        0,
+        1,
+        2,
+        5,
+        4,
+        3
+      ],
+      "terms": 18516,
+      "min_coefficient": 8,
+      "max_coefficient": 83489399949010,
+      "sha256_uncompressed": "2c50802dd3d0142f6d438af473dd2cb666dc87c366dc76333fbedaf2caaca8c0",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        122683392,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        }
+      ]
+    },
+    {
+      "file": "cone_06.json.gz",
+      "order": [
+        0,
+        1,
+        3,
+        2,
+        4,
+        5
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 72713231470320,
+      "sha256_uncompressed": "8cc3e11bdcf5715c48dfadca727dd2d95ca30937eb0f0aafa80dd14c2f7e862c",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        122683392,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 384
+        }
+      ]
+    },
+    {
+      "file": "cone_07.json.gz",
+      "order": [
+        0,
+        1,
+        3,
+        2,
+        5,
+        4
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 69949893120820,
+      "sha256_uncompressed": "d6da589cb0f183b79c15e90a6e789306c34e0f371e707651d290dccd2ed838d9",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        122683392,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 384
+        }
+      ]
+    },
+    {
+      "file": "cone_08.json.gz",
+      "order": [
+        0,
+        1,
+        3,
+        4,
+        2,
+        5
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 67815634839754,
+      "sha256_uncompressed": "694796f7f94f82c9142a674401879c9bbd6f5ae858e38ec305f502e00a1281e0",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        122683392,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 384
+        }
+      ]
+    },
+    {
+      "file": "cone_09.json.gz",
+      "order": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        2
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 61037721666840,
+      "sha256_uncompressed": "f08ef61f107510de2fbeffafca1772d300a81047553be1b67c177e8e22418e60",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        122683392,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 384
+        }
+      ]
+    },
+    {
+      "file": "cone_10.json.gz",
+      "order": [
+        0,
+        1,
+        3,
+        5,
+        2,
+        4
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 57439447677694,
+      "sha256_uncompressed": "f6ceb1e081002e5d5f5a7a49e1c03c87b020114c1cf11fdaeb0177c3b0dc39c2",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        122683392,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 384
+        }
+      ]
+    },
+    {
+      "file": "cone_11.json.gz",
+      "order": [
+        0,
+        1,
+        3,
+        5,
+        4,
+        2
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 56277038157814,
+      "sha256_uncompressed": "237d719b87dae05eca341680c75471b905ea9bc28513a2bbe0c8610b97705f9e",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        122683392,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 384
+        }
+      ]
+    },
+    {
+      "file": "cone_12.json.gz",
+      "order": [
+        0,
+        1,
+        4,
+        2,
+        3,
+        5
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 72838873229064,
+      "sha256_uncompressed": "a12e18e3247f141465c4a346cb04a7360a5ed57ef964656fde315b15d8c36a6a",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        59768832,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_13.json.gz",
+      "order": [
+        0,
+        1,
+        4,
+        2,
+        5,
+        3
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 68474400194940,
+      "sha256_uncompressed": "c3473dffa6a4808be551f39db5fd4c637136bcdadc4c8b1cd3c6948042044f15",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        59768832,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_14.json.gz",
+      "order": [
+        0,
+        1,
+        4,
+        3,
+        2,
+        5
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 67805552792044,
+      "sha256_uncompressed": "0e0eb1ee1c6d1b4b1b5b08a70eeacf7ef8f611f31a73a1bd731a547516dcfe7c",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        59768832,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_15.json.gz",
+      "order": [
+        0,
+        1,
+        4,
+        3,
+        5,
+        2
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 59675368712354,
+      "sha256_uncompressed": "a1bde72fcba0ef80ef356342d01e7c2ca836bd460e96039b40d7d226bfd646e8",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        59768832,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_16.json.gz",
+      "order": [
+        0,
+        1,
+        4,
+        5,
+        2,
+        3
+      ],
+      "terms": 19506,
+      "min_coefficient": 8,
+      "max_coefficient": 51821425842656,
+      "sha256_uncompressed": "2ee6ef944b4443daa49a805eaeb2e516bb70e0586c949d6eed7fdfc55753692c",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        59768832,
+        25165824,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_17.json.gz",
+      "order": [
+        0,
+        1,
+        4,
+        5,
+        3,
+        2
+      ],
+      "terms": 19506,
+      "min_coefficient": 8,
+      "max_coefficient": 51821425842656,
+      "sha256_uncompressed": "ebcf984f11656fd5898e3baaa5a3691328b20e1b50a7208dd2275dee024fd87a",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        59768832,
+        25165824,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_18.json.gz",
+      "order": [
+        0,
+        1,
+        5,
+        2,
+        3,
+        4
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 65403557910408,
+      "sha256_uncompressed": "1b5eb6a46853f4d4d1cb4ea9d6d3855d5ba4d486f4994d80c8032ac89793242c",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        59768832,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_19.json.gz",
+      "order": [
+        0,
+        1,
+        5,
+        2,
+        4,
+        3
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 64300618969476,
+      "sha256_uncompressed": "7f575a565fffd417d772cc5c46250612ea9f823941547fccbebcc66580d641b2",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        59768832,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_20.json.gz",
+      "order": [
+        0,
+        1,
+        5,
+        3,
+        2,
+        4
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 53557490674080,
+      "sha256_uncompressed": "83219a1fc9b490a0d8eae4784a3cac1c030987d3acd65886269eaec60aaaac3c",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        59768832,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_21.json.gz",
+      "order": [
+        0,
+        1,
+        5,
+        3,
+        4,
+        2
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 47922720332600,
+      "sha256_uncompressed": "78f40dd8170a5eab0425824f4e402b29572de483f008e7fd2923858b698a4d84",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        59768832,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_22.json.gz",
+      "order": [
+        0,
+        1,
+        5,
+        4,
+        2,
+        3
+      ],
+      "terms": 19506,
+      "min_coefficient": 8,
+      "max_coefficient": 48138513874104,
+      "sha256_uncompressed": "23f96377a76e6d78f21a70955d38c4254f8d76c567d63e0bd76344db91924b40",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        59768832,
+        25165824,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_23.json.gz",
+      "order": [
+        0,
+        1,
+        5,
+        4,
+        3,
+        2
+      ],
+      "terms": 19506,
+      "min_coefficient": 8,
+      "max_coefficient": 46089308172148,
+      "sha256_uncompressed": "cffc4f4a68762bc5759babafb9e00989e1717ae54a7c7cffd009c2a355df4b11",
+      "interior_quadratic_coefficients": [
+        47185920,
+        88080384,
+        59768832,
+        25165824,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 106320
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_24.json.gz",
+      "order": [
+        0,
+        5,
+        1,
+        2,
+        3,
+        4
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 43366800943288,
+      "sha256_uncompressed": "1e774a2b7fed903836aa0cda59eca699f57cef0a2037b89096504462857d9daa",
+      "interior_quadratic_coefficients": [
+        47185920,
+        25165824,
+        59768832,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 41472
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_25.json.gz",
+      "order": [
+        0,
+        5,
+        1,
+        2,
+        4,
+        3
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 41711122254968,
+      "sha256_uncompressed": "ebbe4e752a03c236aca472200d506a4d6e36bd7c3d1c5e10014d1a20942e174a",
+      "interior_quadratic_coefficients": [
+        47185920,
+        25165824,
+        59768832,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 41472
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_26.json.gz",
+      "order": [
+        0,
+        5,
+        1,
+        3,
+        2,
+        4
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 35896864789004,
+      "sha256_uncompressed": "a7f288dca41d209191907db24d3b96d11ff9fd05ea5416e724183b47a35e939f",
+      "interior_quadratic_coefficients": [
+        47185920,
+        25165824,
+        59768832,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 41472
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_27.json.gz",
+      "order": [
+        0,
+        5,
+        1,
+        3,
+        4,
+        2
+      ],
+      "terms": 19416,
+      "min_coefficient": 8,
+      "max_coefficient": 31845909539884,
+      "sha256_uncompressed": "654e8199ece0963a8d041f431c093061a0bd60fe34e1bf42efdd4df2306beb6c",
+      "interior_quadratic_coefficients": [
+        47185920,
+        25165824,
+        59768832,
+        88080384,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 41472
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_28.json.gz",
+      "order": [
+        0,
+        5,
+        1,
+        4,
+        2,
+        3
+      ],
+      "terms": 19506,
+      "min_coefficient": 8,
+      "max_coefficient": 27759930659136,
+      "sha256_uncompressed": "fb2fe1bf54b9dea52b34f409a1d1f71e37443725bbfdd5f942256c30fcaac246",
+      "interior_quadratic_coefficients": [
+        47185920,
+        25165824,
+        59768832,
+        25165824,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 41472
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    },
+    {
+      "file": "cone_29.json.gz",
+      "order": [
+        0,
+        5,
+        1,
+        4,
+        3,
+        2
+      ],
+      "terms": 19506,
+      "min_coefficient": 8,
+      "max_coefficient": 25947247891708,
+      "sha256_uncompressed": "c3ecc64f17446cdb71a5c8a7128f0de66160854384fa4c1cd2fb69186d4a32c6",
+      "interior_quadratic_coefficients": [
+        47185920,
+        25165824,
+        59768832,
+        25165824,
+        47185920
+      ],
+      "connected_boundary_suffixes": [
+        {
+          "first_positive_rank": 1,
+          "coefficient": 3008000
+        },
+        {
+          "first_positive_rank": 2,
+          "coefficient": 41472
+        },
+        {
+          "first_positive_rank": 3,
+          "coefficient": 696
+        }
+      ]
+    }
+  ],
+  "seconds": 45.6687086999882
+}

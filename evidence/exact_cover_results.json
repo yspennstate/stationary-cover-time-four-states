@@ -1,0 +1,94 @@
+{
+  "arithmetic": "fractions.Fraction",
+  "grid_edge_weights": [
+    0,
+    1,
+    2
+  ],
+  "grid_weight_vectors": 729,
+  "connected_loopless_vectors": 624,
+  "disconnected_vectors_rejected": 105,
+  "holding_vectors": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      2,
+      3
+    ],
+    [
+      0,
+      1000,
+      0,
+      0
+    ]
+  ],
+  "grid_chains_compared": 1872,
+  "individual_starting_state_equalities": 7488,
+  "holding_expansion_identities": 1248,
+  "equality_cases": 2,
+  "minimum_stationary_cover": "11/2",
+  "smallest_strict_grid_value": "67/12",
+  "extra_extreme_chains": 8,
+  "directed_cycle_control_cover": "3",
+  "examples": [
+    {
+      "weights": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "loopless_cover_from_states": [
+        "9",
+        "11",
+        "11",
+        "9"
+      ],
+      "stationary_cover": "31/3"
+    },
+    {
+      "weights": [
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "loopless_cover_from_states": [
+        "10",
+        "9",
+        "9",
+        "9"
+      ],
+      "stationary_cover": "19/2"
+    },
+    {
+      "weights": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "loopless_cover_from_states": [
+        "11/2",
+        "11/2",
+        "11/2",
+        "11/2"
+      ],
+      "stationary_cover": "11/2"
+    }
+  ],
+  "seconds": 15.422348299995065,
+  "passed": true
+}

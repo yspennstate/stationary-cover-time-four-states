@@ -1,0 +1,272 @@
+\documentclass[11pt]{amsart}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1.1in]{geometry}
+\usepackage{hyperref}
+\usepackage[capitalise,nameinlink]{cleveref}
+\emergencystretch=2em
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+
+\newcommand{\E}{\mathbb{E}}
+
+\title{The stationary cover time of reversible chains on three and four states}
+\author{Yitzchak Shmalo}
+\date{}
+
+\begin{document}
+
+\begin{abstract}
+Aldous and Fill asked whether every reversible Markov chain on $n$ states, started from its stationary law, has
+expected cover time at least $(n-1)H_{n-1}$, the value for the simple random walk on the complete graph $K_n$. We
+prove this for $n=3$ and $n=4$, for all reversible chains including those with holding, and show that equality holds
+only for the simple random walk on $K_n$. The case $n=3$ reduces to Schur's inequality. The case $n=4$ rests on an
+explicit polynomial identity of degree $16$ whose numerator becomes coefficientwise nonnegative after an ordered
+substitution on each of $30$ cones of edge orderings. Holding is handled for every $n$ by an occupation identity: if a chain
+without holding satisfies the bound and $E_iC\ge (n-1)H_{n-1}/2$ for every state $i$, then the bound survives any
+added holding. This pointwise condition holds for $n\le 4$.
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+Let $(X_t)_{t\ge0}$ be an irreducible reversible Markov chain on a finite set $V$ of $n$ states, with stationary law
+$\pi$. The cover time $C$ is the first time at which every state has been visited; the starting state counts as
+visited at time $0$. Open Problem~6.30 in Aldous and Fill~\cite{AF} asks whether
+\begin{equation}\label{eq:conj}
+\E_\pi C\ \ge\ (n-1)H_{n-1},\qquad H_m=1+\tfrac12+\dots+\tfrac1m,
+\end{equation}
+for every reversible chain on $n$ states. The right side is the stationary cover time of the simple random walk on
+$K_n$: from a uniform start, the walk waits a geometric number of steps with mean $(n-1)/(n-k)$ for the $k$-th new
+state, $k=1,\dots,n-1$. For unweighted graphs and the worst starting state, the asymptotic lower bound of order
+$n\log n$ is due to Feige~\cite{Feige}; see also~\cite[Chapter~6]{AF}. The exact inequality~\eqref{eq:conj} asks for
+more, since it compares every weighted chain, with holding allowed, with one explicit extremal chain. For $n=2$ it is
+the statement $\E_\pi C\ge 1$, which is clear.
+
+\begin{theorem}\label{thm:main}
+Let $n\in\{3,4\}$. Every irreducible reversible discrete-time Markov chain on $n$ states satisfies
+$\E_\pi C\ge (n-1)H_{n-1}$, that is $\E_\pi C\ge 3$ for $n=3$ and $\E_\pi C\ge 11/2$ for $n=4$. Equality holds if and
+only if the chain is the simple random walk on $K_n$: every off-diagonal transition probability is $1/(n-1)$ and
+there is no holding.
+\end{theorem}
+
+The proof has three parts. \Cref{sec:formula} writes $\E_\pi C$ as an alternating sum of quadratic forms in inverses
+of principal submatrices of the weighted Laplacian; this holds for every $n$. \Cref{sec:holding} shows that holding
+can be added afterwards, under a pointwise condition that is automatic for $n\le4$
+(\cref{prop:holding}). Holding can lower $\E_\pi C$ for a fixed jump chain (a three-state example is given in
+\cref{rem:holding-lowers}), so the reduction is not a monotonicity statement. \Cref{sec:three,sec:four} prove the
+bound without holding for $n=3$ and $n=4$.
+
+\section{The stationary cover time as an alternating sum}\label{sec:formula}
+
+A reversible chain on $V$ is described by symmetric conductances $w_{xy}=w_{yx}\ge0$ for $x\ne y$ and holding weights
+$h_x\ge0$: with $q_x=\sum_{y\ne x}w_{xy}$ and $m_x=q_x+h_x$, the chain moves from $x$ to $y\ne x$ with probability
+$w_{xy}/m_x$ and stays at $x$ with probability $h_x/m_x$. Its stationary law is $\pi_x=m_x/\sum_ym_y$. Every
+irreducible reversible chain arises this way, with $w_{xy}=\pi_xP_{xy}$ and $h_x=\pi_xP_{xx}$, and irreducibility means
+that the graph of positive conductances is connected. In this section and in \cref{sec:three,sec:four} there is no
+holding, so $m=q$, and we write $W=\sum_xq_x$.
+
+Let $L$ be the weighted Laplacian, $L_{xx}=q_x$ and $L_{xy}=-w_{xy}$ for $x\ne y$. For a proper nonempty subset
+$S\subset V$, let $L_S$ be the principal submatrix on $S$ and $q_S=(q_x)_{x\in S}$. If a vector $v$ supported on $S$
+has $v^{\top}Lv=\tfrac12\sum_{x,y}w_{xy}(v_x-v_y)^2=0$, it is constant on the connected support and vanishes off $S$,
+so $v=0$. Hence $L_S$ is positive definite.
+
+\begin{lemma}\label{lem:hitting}
+For a nonempty set $J\subset V$ with complement $S\ne\emptyset$, let $T_J$ be the hitting time of $J$. Then
+$\E_\pi T_J=q_S^{\top}L_S^{-1}q_S/W$.
+\end{lemma}
+
+\begin{proof}
+The function $g_x=\E_xT_J$ vanishes on $J$ and satisfies $g_x=1+\sum_yP_{xy}g_y$ for $x\in S$. Multiplying by $q_x$
+gives $q_xg_x-\sum_{y\in S}w_{xy}g_y=q_x$, that is $L_Sg_S=q_S$. Averaging against $\pi_x=q_x/W$ gives the claim.
+\end{proof}
+
+Let $T_x$ be the hitting time of the single state $x$, with $T_x=0$ if $X_0=x$. Then $C=\max_xT_x$. For real numbers
+$t_x$, $\max_xt_x=\sum_{\emptyset\ne J\subseteq V}(-1)^{|J|+1}\min_{x\in J}t_x$, and $\min_{x\in J}T_x=T_J$. Taking
+expectations, using \cref{lem:hitting}, and writing $S=V\setminus J$ (the term $J=V$ vanishes),
+\begin{equation}\label{eq:maxmin}
+W\,\E_\pi C=\sum_{\emptyset\ne S\subsetneq V}(-1)^{n-|S|+1}\,q_S^{\top}L_S^{-1}q_S .
+\end{equation}
+
+\section{Adding holding}\label{sec:holding}
+
+\begin{proposition}\label{prop:holding}
+Let $Q$ be an irreducible reversible chain on $n$ states without holding, with conductances $w$, and let $c_0>0$.
+Suppose that $\E_\pi C\ge c_0$ for $Q$ and that $\E_xC\ge c_0/2$ for every state $x$. Then every chain obtained from
+$Q$ by adding holding weights $h\ge0$ satisfies $\E_{\pi_h}C_h\ge c_0$. More precisely, with $W_h=W+\sum_xh_x$,
+\begin{equation}\label{eq:holding}
+W_h\bigl(\E_{\pi_h}C_h-c_0\bigr)=W\bigl(\E_\pi C-c_0\bigr)+\sum_xh_x\bigl(2\,\E_xC-c_0\bigr)+h^{\top}Kh
+\end{equation}
+for a symmetric matrix $K$ with nonnegative entries.
+\end{proposition}
+
+\begin{proof}
+For the chain $Q$ let $N_{xy}=\E_x\sum_{t=0}^{C-1}\mathbf 1\{X_t=y\}$ and $K_{xy}=N_{xy}/q_y$. For each $t$, the event
+$\{t<C\}$ depends only on the path $X_0,\dots,X_t$, through the condition that it misses some state, and this condition
+is unchanged when the path is reversed. Reversibility gives $q_x\,\mathbb P(\text{path})=q_y\,\mathbb P(\text{reversed
+path})$ for a path from $x$ to $y$. Summing over paths of length $t$ that miss a state, and then over $t$, gives
+$q_xN_{xy}=q_yN_{yx}$, so $K$ is symmetric. Since $\sum_yN_{xy}=\E_xC$, we have $(Kq)_x=\E_xC$.
+
+Add holding weights $h$ and let $m=q+h$. The jump chain of the new chain is $Q$, and each visit to $y$ before the last
+new state is reached lasts a geometric number of steps with mean $m_y/q_y$. The cover time ends on arrival at the last
+new state, so no waiting is counted there. Conditioning on the jump chain gives $\E_xC_h=\sum_yK_{xy}m_y$, and with
+$\pi_h(x)=m_x/W_h$,
+\[
+W_h\,\E_{\pi_h}C_h=m^{\top}Km=q^{\top}Kq+2h^{\top}Kq+h^{\top}Kh=W\,\E_\pi C+2\sum_xh_x\,\E_xC+h^{\top}Kh .
+\]
+Subtracting $c_0W_h=c_0W+c_0\sum_xh_x$ gives~\eqref{eq:holding}. Every term on the right of~\eqref{eq:holding} is
+nonnegative under the hypotheses.
+\end{proof}
+
+Any chain needs at least $n-1$ steps to cover $n$ states, so $\E_xC\ge n-1$. For $c_0=(n-1)H_{n-1}$ the condition
+$n-1\ge c_0/2$ reads $H_{n-1}\le2$, which holds for $n\le4$ (with $H_3=11/6$) and fails for $n\ge5$. For $n=3$ and
+$n=4$ the middle term of~\eqref{eq:holding} is at least $\sum_xh_x$ and $\tfrac12\sum_xh_x$ respectively, so any
+positive holding gives a strict inequality. Hence \cref{thm:main} follows from its case without holding, which is
+proved in the next two sections.
+
+\begin{remark}\label{rem:holding-lowers}
+Adding holding to a fixed jump chain can decrease $\E_\pi C$, because holding also changes the stationary law, and
+hence the starting distribution. Take three states with $w_{12}=1$ and $w_{13}=w_{23}=1/100$, so that state $3$ is
+hard to reach. Without holding $\E_\pi C\approx100.04$; with holding weight $h_3=1$ at state $3$ the chain starts
+there more often, and $\E_\pi C\approx85.07$. \Cref{prop:holding} therefore cannot be replaced by the statement that
+holding never lowers the stationary cover time.
+\end{remark}
+
+\section{Three states}\label{sec:three}
+
+Write $a=w_{12}$, $b=w_{13}$, $c=w_{23}$, with at most one of them zero. By~\eqref{eq:maxmin}, or by a direct
+first-step computation,
+\begin{equation}\label{eq:three}
+\E_\pi C-3=\frac{Q(a,b,c)}{2(a+b+c)(ab+bc+ca)},\qquad
+Q=4(a^3+b^3+c^3)-\sum_{\mathrm{sym}}a^2b-6abc,
+\end{equation}
+where $\sum_{\mathrm{sym}}a^2b$ is the sum of the six monomials $a^2b,a^2c,b^2a,b^2c,c^2a,c^2b$. Now
+\[
+Q=\Bigl(a^3+b^3+c^3+3abc-\sum_{\mathrm{sym}}a^2b\Bigr)+3\bigl(a^3+b^3+c^3-3abc\bigr).
+\]
+The first bracket is nonnegative by Schur's inequality and the second by the inequality of arithmetic and geometric
+means. The second vanishes only when $a=b=c$, and connectivity then forces $a=b=c>0$. Hence $\E_\pi C\ge3$ without
+holding, with equality only for the simple random walk on $K_3$. Together with \cref{prop:holding} this proves
+\cref{thm:main} for $n=3$.
+
+\section{Four states}\label{sec:four}
+
+Label the edges of $K_4$ as $(x_0,\dots,x_5)=(w_{01},w_{02},w_{03},w_{12},w_{13},w_{23})$. For the sets $S$ of size
+one, $q_S^{\top}L_S^{-1}q_S=q_x$, and these terms sum to $W$. For $S=\{i,j\}$,
+\[
+q_S^{\top}L_S^{-1}q_S=\frac{B_{ij}}{\Delta_{ij}},\qquad \Delta_{ij}=q_iq_j-w_{ij}^2,\qquad
+B_{ij}=q_iq_j(q_i+q_j+2w_{ij}).
+\]
+For $|S|=3$, the determinant of $L_S$ is the spanning-tree polynomial $\tau$ of the weighted $K_4$, by the matrix-tree
+theorem. Put $A=\sum_{|S|=3}q_S^{\top}\operatorname{adj}(L_S)\,q_S$ and $R=\prod_{i<j}\Delta_{ij}$. Then
+\eqref{eq:maxmin} becomes $\E_\pi C=1+\bigl(A/\tau-\sum_{i<j}B_{ij}/\Delta_{ij}\bigr)/W$, so
+\begin{equation}\label{eq:F}
+\E_\pi C-\frac{11}{2}=\frac{F}{2W\tau R},\qquad
+F=2AR-2\tau\sum_{i<j}B_{ij}\prod_{\{k,l\}\ne\{i,j\}}\Delta_{kl}-9W\tau R .
+\end{equation}
+The denominator is positive: $\tau$ and $\Delta_{ij}$ are determinants of the positive definite matrices $L_S$. The
+numerator $F$ is a homogeneous polynomial of degree $16$ in $x_0,\dots,x_5$ with integer coefficients. It has
+$13{,}368$ terms, of which $2{,}421$ have negative coefficients, so its nonnegativity is not visible term by term.
+
+\begin{proposition}\label{prop:cones}
+$F(x)\ge0$ for every $x\in[0,\infty)^6$ whose support is a connected spanning subgraph of $K_4$, with equality only
+when all six $x_k$ are equal.
+\end{proposition}
+
+\begin{proof}
+Every $x\in[0,\infty)^6$ has some ordering $x_{o_0}\le x_{o_1}\le\dots\le x_{o_5}$, where $o$ is a permutation of the
+six edges. Writing $x_{o_k}=z_0+z_1+\dots+z_k$ with $z_k\ge0$ turns $F$ into a polynomial $G_o(z)$. Relabelling the
+four states permutes the edges and leaves $F$ unchanged, since it leaves $\E_\pi C$, $W$, $\tau$ and $R$ unchanged. The
+$720$ orderings fall into $30$ orbits of size $24$ under the $24$ relabellings, because no relabelling other than the
+identity fixes all six edges. It is therefore enough to treat one representative $o$ of each orbit.
+
+For each of the $30$ representatives, the polynomial $G_o$ has nonnegative integer coefficients; there are
+$577{,}620$ nonzero coefficients in all, recorded in the accompanying files. This proves $F\ge0$. For equality, note that
+in every $G_o$ the monomials $z_0^{14}z_j^2$, $1\le j\le5$, have positive coefficients. If all edges are positive then
+$z_0>0$, so $F=0$ forces $z_1=\dots=z_5=0$, which means all six weights are equal. If some edge vanishes, let $j\ge1$ be
+the smallest index with $x_{o_j}>0$; then $z_j>0$, and the positive edges are exactly $o_j,\dots,o_5$. Whenever these
+edges form a connected spanning subgraph, the coefficient of $z_j^{16}$ in $G_o$ is positive, so $F>0$.
+\end{proof}
+
+By~\eqref{eq:F} and \cref{prop:cones}, $\E_\pi C\ge11/2$ for every irreducible reversible chain on four states without
+holding, with equality only when all conductances are equal, that is for the simple random walk on $K_4$. With
+\cref{prop:holding} this proves \cref{thm:main} for $n=4$.
+
+\begin{remark}
+\Cref{prop:cones} is a finite computation. The coefficients of the $30$ polynomials $G_o$, the polynomial $F$, and
+programs that rebuild $F$ from~\eqref{eq:maxmin} and check every coefficient in exact integer arithmetic are in the
+repository listed below. Two further checks are independent of the program that produced the certificate: a second
+reconstruction of $F$ from integer dictionaries, Leibniz determinants and an enumeration of spanning trees, and an
+evaluation of each $G_o$ at random integer points against $2W\tau R(\E_\pi C-11/2)$ computed by an exact solve of the
+first-step equations on pairs (current state, visited set). Exact enumeration over all $624$ connected weightings in
+$\{0,1,2\}^6$, each with three holding vectors, finds minimum $11/2$, attained only at the two constant weightings
+without holding. The
+case $n=3$ with holding, and \cref{prop:holding} in the form of a statement about symmetric matrices, have been checked in
+Lean~4 with Mathlib.
+\end{remark}
+
+\section{Remarks on larger $n$}
+
+For $n\ge5$ the trivial bound $\E_xC\ge n-1$ falls short of $(n-1)H_{n-1}/2$, so the hypothesis of
+\cref{prop:holding} would have to be proved separately, and the reduction from chains with holding is open. The approach
+of \cref{sec:four} also grows quickly: for $n=5$ there are ten edges and $10!/120=30{,}240$ orbits of edge orderings.
+Numerical minimisation over reversible chains on five and six states, with holding, has found no value below
+$(n-1)H_{n-1}$.
+
+\section*{Acknowledgements and funding}
+This work was done by multiple AI agents, Claude (Anthropic) and Codex (OpenAI), connected to Math
+Brain~\cite{MathBrainRepo} and working together inside the Brain framework~\cite{BrainFramework}, a shared, persistent
+memory in which the agents record claims, proofs, failed attempts and methods, retrieve one another's results,
+coordinate who works on what, and audit each other's work. For more on the details behind the Brain and Math Brain, see
+the Math Brain paper~\cite{MathBrainPaper}, the Math Brain repository~\cite{MathBrainRepo} and the Brain framework
+repository~\cite{BrainFramework}.
+
+The research presented in this paper was supported by the European Research Council (ERC) under the European Union's
+Horizon Europe research and innovation programme (grant agreement No.~101041711), by the Simons Foundation as part of
+the Collaboration on the Mathematical and Scientific Foundations of Deep Learning, by Heights Labs, by Convex Nexus
+Capital, by the Israel Science Foundation (grant number 2258/19), and by the Israel Science Foundation (ISF Grant
+4101/25). Computational resources were provided in part by Google Cloud through its education credits program (credit
+530550103).
+
+\section*{Declaration of competing interest}
+The author holds equity in Heights Labs and in Convex Nexus Capital and has a management role at Convex Nexus Capital.
+These entities are included in the funding declaration above.
+
+\section*{Declaration of generative AI and AI-assisted technologies}
+The paper comes out of Math Brain, an ongoing project on the use of AI systems for research mathematics, and its
+results were developed with the Brain~\cite{BrainFramework} and Math Brain~\cite{MathBrainRepo}. In October and
+November 2026 Claude agents (Anthropic) and Codex agents running OpenAI's GPT-6.1, connected to the Brain and working
+on the same problem, studied the stationary cover time of small reversible chains. A Claude agent proved the case
+$n=3$; a Codex agent found the formula~\eqref{eq:F}, the cone certificate for $n=4$ and the occupation identity of
+\cref{prop:holding}. Claude agents checked the certificate with independent programs, formalised the case $n=3$ and the
+holding lemma in Lean, and Claude Opus 5.5 (Anthropic) prepared the manuscript and audited it. These checks are not peer
+review. The author directed the work and is responsible for the content of the paper and for decisions concerning its
+dissemination.
+
+\section*{Code and data availability}
+Code, certificates and Lean files are at
+
+\url{https://github.com/yspennstate/stationary-cover-time-four-states}.
+
+The paper is part of the Math Brain project, whose public repository is
+\url{https://github.com/yspennstate/math-brain-public}~\cite{MathBrainRepo}.
+
+\begin{thebibliography}{99}
+\bibitem{AF} D.~Aldous, J.~A.~Fill, \emph{Reversible Markov Chains and Random Walks on Graphs}, unfinished monograph,
+recompiled 2014, \url{https://www.stat.berkeley.edu/~aldous/RWG/book.html}.
+\bibitem{Feige} U.~Feige, A tight lower bound on the cover time for random walks on graphs, Random Structures
+Algorithms 6 (1995), 433--438.
+\bibitem{MathBrainRepo} Y.~Shmalo, \emph{Math Brain: public snapshot, code and tests}, 2026,
+\url{https://github.com/yspennstate/math-brain-public}.
+\bibitem{MathBrainPaper} Y.~Shmalo, \emph{Math Brain: shared, auditable memory for multi-agent mathematical research},
+October 2026, \url{https://github.com/yspennstate/math-brain-public/tree/main/papers/math-brain-2026-10-24}.
+\bibitem{BrainFramework} Y.~Shmalo, \emph{Brain Framework}, public software repository, 2026,
+\url{https://github.com/yspennstate/brain-framework-public}.
+\end{thebibliography}
+
+\end{document}
