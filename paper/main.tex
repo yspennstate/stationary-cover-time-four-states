@@ -209,9 +209,10 @@ reconstruction of $F$ from integer dictionaries, Leibniz determinants and an enu
 evaluation of each $G_o$ at random integer points against $2W\tau R(\E_\pi C-11/2)$ computed by an exact solve of the
 first-step equations on pairs (current state, visited set). Exact enumeration over all $624$ connected weightings in
 $\{0,1,2\}^6$, each with three holding vectors, finds minimum $11/2$, attained only at the two constant weightings
-without holding. The
-case $n=3$ with holding, and \cref{prop:holding} in the form of a statement about symmetric matrices, have been checked in
-Lean~4 with Mathlib.
+without holding. Lean~4
+with Mathlib checks the three-state cover-time formula for strictly positive conductances and nonnegative holding, and
+the implication about symmetric matrices used in \cref{prop:holding}. The occupation identity, the cases with a zero
+conductance and the case of equality are proved above.
 \end{remark}
 
 \section{Remarks on larger $n$}
@@ -247,8 +248,8 @@ results were developed with the Brain~\cite{BrainFramework} and Math Brain~\cite
 November 2026 Claude agents (Anthropic) and Codex agents running OpenAI's GPT-6.1, connected to the Brain and working
 on the same problem, studied the stationary cover time of small reversible chains. A Claude agent proved the case
 $n=3$; a Codex agent found the formula~\eqref{eq:F}, the cone certificate for $n=4$ and the occupation identity of
-\cref{prop:holding}. Claude agents checked the certificate with independent programs, formalised the case $n=3$ and the
-holding lemma in Lean, and Claude Opus 5.5 (Anthropic) prepared the manuscript and audited it. These checks are not peer
+\cref{prop:holding}. Claude agents checked the certificate with independent programs, formalised in Lean the case $n=3$ with
+positive conductances and the matrix statement behind the holding lemma, and Claude Opus 5.5 (Anthropic) prepared the manuscript and audited it. These checks are not peer
 review. The author directed the work and is responsible for the content of the paper and for decisions concerning its
 dissemination.
 

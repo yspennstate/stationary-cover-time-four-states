@@ -63,7 +63,7 @@ man = json.load(open(B + "/cone_manifest.json"))
 rng = random.Random(20261111); bad = 0; nterms = 0; npts = 0
 for cone in man["cones"]:
     o = cone["order"]; terms = json.load(gzip.open(B + "/cones/" + cone["file"]))
-    nterms += len(terms)
+    nterms += len(terms); cbad = 0
     assert all(isinstance(c, int) and c > 0 for _, c in terms), cone["file"]
     for t in range(4):
         z = [rng.randint(1, 9)] + [rng.randint(0, 7) for _ in range(5)]
@@ -76,9 +76,10 @@ for cone in man["cones"]:
             for zi, ei in zip(z, e): m *= zi**ei
             g += m
         f = Fval(x); npts += 1
-        if f != g: bad += 1; print("MISMATCH", cone["file"], z, f, g)
-    print(cone["file"], o, len(terms), "ok", flush=True)
+        if f != g: bad += 1; cbad += 1; print("MISMATCH", cone["file"], z, f, g)
+    print(cone["file"], o, len(terms), "ok" if cbad == 0 else "FAIL", flush=True)
 print(f"cones {len(man['cones'])}, terms {nterms}, points {npts}, mismatches {bad}")
+assert bad == 0, bad
 
 # coverage: images of the 30 representatives under the 24 vertex relabellings give all 720 edge orderings
 eidx = {e: k for k, e in enumerate(EDGES)}
@@ -88,3 +89,4 @@ for cone in man["cones"]:
         img = tuple(eidx[tuple(sorted((p[EDGES[k][0]], p[EDGES[k][1]])))] for k in cone["order"])
         cov.add(img)
 print("orderings covered", len(cov), "of 720")
+assert len(cov) == 720, len(cov)

@@ -21,7 +21,8 @@ with holding are included.
   - `symbolic_four.py` (needs sympy) and `certify_cones.py` are the programs that produced the polynomial and the
     cones. `exact_cover.py` compares the closed formula with the exact recursion on a grid of weights, with and
     without holding. `poly.py` is a small sparse polynomial module.
-- `lean/` - Lean 4 with Mathlib: the case n = 3 with holding (`P0245_N3.lean`) and the holding reduction of the
+- `lean/` - Lean 4 with Mathlib: the three-state cover-time formula and bound for strictly positive conductances and
+  nonnegative holding (`P0245_N3.lean`) and the holding reduction of the
   paper's Proposition 3 as a statement about symmetric nonnegative matrices (`P0245_HoldingReduction.lean`). Neither
   file contains `sorry`. The four-state certificate is not formalised.
 
